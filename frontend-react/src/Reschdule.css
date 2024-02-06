@@ -1,28 +1,26 @@
-/* Reschedule.css */
-
 .container {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 40%;
+  width: 80%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Add a maximum width for larger screens */
+  margin: 0 auto; /* Center the container horizontally */
   position: absolute;
   left: 50%;
-  right: 50%;
-  transform: translate(-50%, 50%);
+  top: 50%; /* Adjust top position for better centering */
+  transform: translate(-50%, -50%);
 }
 
 .date-time-input {
-  width: 80%;
+  width: 100%; /* Make the input full-width */
   padding: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
 
-
 .inputs {
-  
   border: none;
   outline: none;
   background: none;
@@ -30,7 +28,7 @@
   color: #222;
   display: flex;
   padding: 15px 5px 10px 20px;
-  box-shadow: inset 4px 4px 4px rgba(15, 15, 15, 0.315),4px 4px 4px rgba(28, 28, 28, 0.13);
+  box-shadow: inset 4px 4px 4px rgba(15, 15, 15, 0.315), 4px 4px 4px rgba(28, 28, 28, 0.13);
   border-radius: 25px;
   background-clip: padding-box;
 }
@@ -45,13 +43,12 @@
   transition: all 0.3s ease;
   font-size: 19px;
   font-weight: 700;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 }
 
 .inputs:focus::placeholder {
   color: #999;
 }
-
 
 .bn31 {
   background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
@@ -64,7 +61,9 @@
   padding: 4px;
   position: relative;
   text-decoration: none;
-  width: 7em;
+  width: 100%; 
+  max-width: 200px; /* Add a maximum width for larger screens */
+  margin: 0 auto; /* Center the button horizontally */
   z-index: 2;
 }
 
@@ -85,4 +84,15 @@
 
 .bn31:hover .bn31span {
   background: transparent;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .bn31 {
+    font-size: 1.2em;
+  }
 }

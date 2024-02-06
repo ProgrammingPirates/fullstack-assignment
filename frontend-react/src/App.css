@@ -38,6 +38,7 @@ body {
   justify-self: flex-start;
 }
 
+
 .card {
   width: 70%;
   margin: 50px auto;
@@ -46,7 +47,6 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
   text-align: center;
   color: #333;
@@ -79,6 +79,7 @@ ul {
   position: absolute;
   top: 100%; /* Position dropdown below the dots */
   left: 0;
+  right: auto;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -214,14 +215,14 @@ a:hover {
 }
 
 /* Optional: Add responsive styles */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px)  {
   .card {
     width: 90%;
   }
 }
-
 .input {
   max-width: 190px;
+  width: 100px;
   border: none;
   outline: none;
   background: none;
@@ -243,8 +244,9 @@ a:hover {
 }
 
 .buttons {
+  font-size: 14px;
   padding: 1.3em 3em;
-  font-size: 12px;
+  
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -278,6 +280,7 @@ a:hover {
   color: white;
 }
 
+
 .container .label {
   font-size: 15px;
   padding-left: 10px;
@@ -288,7 +291,7 @@ a:hover {
 }
 
 .input {
-  width: 200px;
+  width: 100%;
   height: 45px;
   border: none;
   outline: none;
